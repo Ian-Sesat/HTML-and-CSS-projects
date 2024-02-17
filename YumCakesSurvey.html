@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YumCakes Survey Form</title>
+    <link rel="stylesheet" href="YumCakesSurvey.css"/>
+  </head>
+  <body>
+    <h1 id="title">YumCakes Survey Form</h1>
+    <p id="description">Welcome to the YumCakes Survey Form</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label id="name-label">Enter your name: <input id="name" type="text" placeholder="eg Staicey Limo" required/></label>
+        <label id="email-label">Enter your email: <input id="email" type="email" placeholder="eg yumcakes@gmail.com" required/></label>
+        <label id="number-label">Enter your rating(0 to 5): <input id="number" type="number" min="0" max="5" placeholder="eg 4.5" required/></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Would you recommend YumCakes to your friends?
+            <select id="dropdown">
+              <option value="">Select one</option>
+              <option value="1">Definitely</option>
+              <option value="2">Maybe</option>
+              <option value="3">No</option>
+            </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>What improvement do you feel should be addressed critically? </label>
+        <label>
+          <input type="radio" id="service" name="improvement" class="inline" value="0" checked />
+          Service delivery
+        </label>
+        <label>
+          <input type="radio" id="delivery" name="improvement" class="inline"  value="1" />
+          Delivery time
+        </label>
+        <label>
+          <input type="radio" id="quality" name="improvement" class="inline"
+          value="2"  />
+          Cake quality
+        </label>
+        <label>
+          What is your favourite dish in Yumcakes?(Select all that apply)
+        </label>
+        <label for="vanilla">
+        <input type="checkbox" id="vanilla" value="0"/>
+        Vanilla cake
+        </label for="carrot">
+          <input type="checkbox" id="carrot" value="1"/>
+          Carrot cake
+        <label for="swiss">
+          <input type="checkbox" id="swiss" value="2"/>
+          Swiss rolls
+        </label>
+        <label for="chocolate">
+          <input type="checkbox" id="chocolate" value="3"/>
+          Chocolate cake
+        </label>
+        <label for="additional">
+          Additonal details: 
+          <textarea id="additonal" name="additional" rows="8" cols="40" placeholder="I would like the cakes to be extra spicy...."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>

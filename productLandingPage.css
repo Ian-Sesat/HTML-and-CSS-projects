@@ -1,0 +1,33 @@
+
+img{
+    width: 100%;
+    object-fit: cover;
+    height: 40%
+  }
+  a {
+    text-decoration: none;
+    color:white;
+  }
+  nav{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .content{
+    font-family: sans-serif;
+    color: rgb(0,10,120)
+  }
+  @media (max-width: 768px) {
+      body { font-size: 16px; }
+      .image { width: 100%; }
+    }
+    
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      body { font-size: 18px; }
+      .image { width: 70%; }}
+      #nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Ensure navbar stays above other elements */
+  }
